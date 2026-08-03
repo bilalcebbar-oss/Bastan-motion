@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bastan Motion · Montage vidéo &amp; motion design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="pageTransition"><div class="ov-panel"></div><span class="ov-label mono"></span></div>
+
+<header id="siteHeader">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Bastan Motion logo">
+      <span class="brand-word">BASTAN <b>MOTION</b></span>
+    </a>
+    <div class="nav-right">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuPanel">
+        <span class="menu-icon"><span></span><span></span><span></span></span>
+        <span class="mono">MENU</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<div class="menu-panel" id="menuPanel" aria-hidden="true">
+  <div class="menu-clap-bar"></div>
+  <nav class="menu-links">
+    <a href="apropos.html" data-transition="dissolve" data-transition-label="DISSOLVE → À PROPOS">À propos</a>
+  </nav>
+</div>
+
+<main>
+
+  <section class="hero">
+    <div class="letterbox top"></div>
+    <div class="letterbox bottom"></div>
+    <div class="hero-bg"></div>
+    <div class="grain"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="eyebrow mono">
+          <span class="rec"></span>
+          <span>REC · BASTAN MOTION</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="line1">DES IMAGES QUI</span>
+          <span class="line2">RACONTENT.</span>
+        </h1>
+        <p class="hero-sub">Montage vidéo &amp; motion design, jusqu'à l'étalonnage final. Chaque projet est construit comme un plan-séquence, avec du rythme et du sens.</p>
+        <a href="#travail" class="cta">
+          <span class="play"></span>
+          Voir le travail
+        </a>
+      </div>
+
+      <div class="tool-badges" aria-label="Outils utilisés">
+        <span class="tool-badge" style="--tb-color:#4F2A84;" title="After Effects">Ae</span>
+        <span class="tool-badge" style="--tb-color:#34158C;" title="Premiere Pro">Pr</span>
+        <span class="tool-badge" style="--tb-color:#0A4D8C;" title="Photoshop">Ps</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="editor reveal" aria-hidden="true">
+    <div class="editor-topbar mono">
+      <span>SÉQUENCE · BASTAN_MOTION_REEL</span>
+      <span class="editor-tc" id="editorTc">00:00:14:06</span>
+    </div>
+    <div class="editor-body">
+      <div class="timeline-ruler" id="timelineRuler"></div>
+      <div class="timeline-tracks" id="timelineTracks">
+        <div class="track-row">
+          <div class="track-label mono">V2</div>
+          <div class="track-lane">
+            <div class="clip clip-broll" style="left:4%; width:9%;">B-ROLL</div>
+            <div class="clip clip-broll" style="left:38%; width:9%;">B-ROLL</div>
+            <div class="clip clip-broll" style="left:75%; width:9%;">B-ROLL</div>
+          </div>
+        </div>
+        <div class="track-row">
+          <div class="track-label mono">V1</div>
+          <div class="track-lane">
+            <div class="clip clip-main" style="left:0%; width:12.5%;">YOUTUBE</div>
+            <div class="clip clip-main" style="left:14.5%; width:12.5%;">TIKTOK</div>
+            <div class="clip clip-main" style="left:29%; width:12.5%;">INSTAGRAM</div>
+            <div class="clip clip-main" style="left:43.5%; width:12.5%;">FORMAT COURT</div>
+            <div class="clip clip-main" style="left:58%; width:12.5%;">FORMAT LONG</div>
+            <div class="clip clip-main" style="left:72.5%; width:12.5%;">PODCAST</div>
+            <div class="clip clip-main" style="left:87%; width:12.5%;">MOTION DESIGN</div>
+          </div>
+        </div>
+        <div class="track-row">
+          <div class="track-label mono">A1</div>
+          <div class="track-lane waveform-lane" id="waveformLane"></div>
+        </div>
+        <div class="playhead" id="playhead" style="left:22%;" role="slider" aria-label="Curseur de lecture" tabindex="0">
+          <div class="playhead-handle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sprocket-row" aria-hidden="true">
+    <span class="on"></span><span></span><span class="on"></span><span></span><span class="on"></span>
+    <span></span><span class="on"></span><span></span><span class="on"></span><span></span>
+    <span class="on"></span><span></span><span class="on"></span><span></span><span class="on"></span>
+    <span></span><span class="on"></span><span></span><span class="on"></span><span></span>
+  </div>
+
+  <section class="wrap reveal" id="travail">
+    <div class="section-head">
+      <div>
+        <span class="page-eyebrow mono">01 · TRAVAIL</span>
+        <h2 class="page-title" style="font-size:clamp(28px,4vw,44px);">Sélection de projets</h2>
+      </div>
+      <p class="page-meta">Plusieurs formats, un seul objectif : capter et garder l'attention.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <a href="#" class="reel">
+        <div class="reel-frame ar-169" style="--frame-a:#2E4684; --frame-b:#101116;">
+          <div class="noise"></div>
+          <span class="ar-badge mono">16:9</span>
+          <div class="play-btn"><span class="tri"></span></div>
+        </div>
+        <div class="reel-body">
+          <span class="reel-cat">YouTube · Format long</span>
+          <h3 class="reel-title">YouTube / Format Long</h3>
+          <p class="reel-desc">Montage narratif pour créateurs et marques, avec du rythme et de la structure pour garder l'audience jusqu'au bout.</p>
+        </div>
+      </a>
+
+      <a href="#" class="reel">
+        <div class="reel-frame ar-169" style="--frame-a:#3E5A96; --frame-b:#1B1D24;">
+          <div class="noise"></div>
+          <span class="ar-badge mono">16:9</span>
+          <div class="play-btn"><span class="tri"></span></div>
+        </div>
+        <div class="reel-body">
+          <span class="reel-cat">Dubaï · Témoignage</span>
+          <h3 class="reel-title">Dubaï · Immersion &amp; Témoignage</h3>
+          <p class="reel-desc">Un format immersif qui capture l'énergie d'un lieu à travers le regard de ceux qui le vivent.</p>
+        </div>
+      </a>
+
+      <a href="#" class="reel">
+        <div class="reel-frame ar-11" style="--frame-a:#20305E; --frame-b:#101116;">
+          <div class="noise"></div>
+          <span class="ar-badge mono">1:1</span>
+          <div class="play-btn"><span class="tri"></span></div>
+        </div>
+        <div class="reel-body">
+          <span class="reel-cat">Publicité</span>
+          <h3 class="reel-title">Publicité · Tableau Artistique</h3>
+          <p class="reel-desc">Une publicité pensée comme une œuvre visuelle, où chaque plan sert l'émotion de la marque.</p>
+        </div>
+      </a>
+
+      <a href="#" class="reel">
+        <div class="reel-frame ar-169" style="--frame-a:#16234A; --frame-b:#0B0C10;">
+          <div class="noise"></div>
+          <span class="ar-badge mono">16:9</span>
+          <div class="play-btn"><span class="tri"></span></div>
+        </div>
+        <div class="reel-body">
+          <span class="reel-cat">Motion design</span>
+          <h3 class="reel-title">Storytelling · Motion Design</h3>
+          <p class="reel-desc">Animation et motion design au service d'un récit clair et engageant.</p>
+        </div>
+      </a>
+
+      <a href="#" class="reel">
+        <div class="reel-frame ar-11" style="--frame-a:#2E4684; --frame-b:#22242E;">
+          <div class="noise"></div>
+          <span class="ar-badge mono">1:1</span>
+          <div class="play-btn"><span class="tri"></span></div>
+        </div>
+        <div class="reel-body">
+          <span class="reel-cat">Podcast</span>
+          <h3 class="reel-title">Podcast · Édition Dynamique</h3>
+          <p class="reel-desc">Un montage podcast vivant et rythmé, qui garde l'auditeur engagé du début à la fin.</p>
+        </div>
+      </a>
+
+      <a href="#" class="reel">
+        <div class="reel-frame ar-169" style="--frame-a:#3E5A96; --frame-b:#16234A;">
+          <div class="noise"></div>
+          <span class="ar-badge mono">16:9</span>
+          <div class="play-btn"><span class="tri"></span></div>
+        </div>
+        <div class="reel-body">
+          <span class="reel-cat">Publicité · Campagne</span>
+          <h3 class="reel-title">Campagne Publicitaire</h3>
+          <p class="reel-desc">Un film publicitaire pensé pour marquer les esprits et porter l'image de marque, du concept au montage final.</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <span class="mono">CONTACT</span>
+      <a href="mailto:bilal.bastan@icloud.com">bilal.bastan@icloud.com</a>
+      <a href="tel:+33787345273">07 87 34 52 73</a>
+      <div class="footer-links"><a href="https://www.instagram.com/bastan.motion" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="footer-meta mono">
+      <span>© <span class="year"></span> BASTAN MOTION</span>
+      <span>MONTAGE VIDÉO · MOTION DESIGN</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos · Bastan Motion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div id="pageTransition"><div class="ov-panel"></div><span class="ov-label mono"></span></div>
+
+<header id="siteHeader" class="solid">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" data-transition="cut" data-transition-label="CUT → ACCUEIL">
+      <img src="assets/logo.png" alt="Bastan Motion logo">
+      <span class="brand-word">BASTAN <b>MOTION</b></span>
+    </a>
+    <div class="nav-right">
+      <button class="menu-toggle" id="menuToggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuPanel">
+        <span class="menu-icon"><span></span><span></span><span></span></span>
+        <span class="mono">MENU</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<div class="menu-panel" id="menuPanel" aria-hidden="true">
+  <div class="menu-clap-bar"></div>
+  <nav class="menu-links">
+    <a href="apropos.html" class="current">À propos</a>
+  </nav>
+</div>
+
+<main>
+
+  <div class="page-hero">
+    <div class="render-bar" aria-hidden="true">
+      <div class="render-track"><div class="render-fill"></div></div>
+      <div class="render-label mono">
+        <span class="rl-1">RENDU EN COURS…</span>
+        <span class="rl-2">✓ SÉQUENCE PRÊTE</span>
+      </div>
+    </div>
+    <span class="page-eyebrow mono">À PROPOS</span>
+    <h1 class="page-title">Bilal Bastan</h1>
+    <p class="page-meta">Monteur vidéo et fondateur de Bastan Motion.</p>
+  </div>
+
+  <section class="wrap reveal" style="padding-top:0;">
+    <div class="about-grid">
+      <div class="about-photo film-in">
+        <img src="assets/bilal.jpg" alt="Bilal Bastan">
+        <span class="about-photo-tag mono">BILAL BASTAN</span>
+      </div>
+
+      <div class="about-right">
+        <div class="about-text">
+          <p>Le montage ne consiste pas simplement à assembler des plans. Il s'agit de raconter une histoire, transmettre une émotion et retenir l'attention dès les premières secondes.</p>
+          <p class="dim">Formé au montage vidéo et en constante évolution, j'accorde une grande importance au rythme, au sound design, au motion design et à la direction artistique afin de créer des vidéos qui marquent les esprits.</p>
+          <p class="dim">Que ce soit pour YouTube, les réseaux sociaux ou un projet de marque, mon objectif reste le même : transformer des rushs en une vidéo percutante qui capte, engage et laisse une véritable impression.</p>
+          <p class="dim">Chaque projet est une collaboration. J'écoute, je m'adapte à votre univers et je mets tout en œuvre pour produire un résultat à la hauteur de vos ambitions.</p>
+        </div>
+
+        <!-- Remplacer ce bloc par une vraie balise <video> ou un lecteur intégré une fois la vidéo prête -->
+        <div class="about-video-slot">
+          <div class="noise"></div>
+          <div class="play-btn"><span class="tri"></span></div>
+          <span class="video-slot-label mono">VIDÉO À VENIR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="tools-simple">
+      <span class="tools-label mono">OUTILS</span>
+      <div class="tools-list mono">Illustrator · Photoshop · After Effects · Premiere Pro · CapCut</div>
+    </div>
+
+    <div class="scrub-filler" aria-hidden="true">
+      <div class="scrub-track"><div class="scrub-head"></div></div>
+      <span class="scrub-tc mono" id="scrubTc">00:00:04:12</span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <span class="mono">CONTACT</span>
+      <a href="mailto:bilal.bastan@icloud.com">bilal.bastan@icloud.com</a>
+      <a href="tel:+33787345273">07 87 34 52 73</a>
+      <div class="footer-links"><a href="https://www.instagram.com/bastan.motion" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="footer-meta mono">
+      <span>© <span class="year"></span> BASTAN MOTION</span>
+      <span>MONTAGE VIDÉO · MOTION DESIGN</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
