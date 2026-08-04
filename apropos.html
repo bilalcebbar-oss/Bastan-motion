@@ -54,7 +54,10 @@
   <section class="wrap reveal" style="padding-top:0;">
     <div class="about-grid">
       <div class="about-photo film-in">
-        <img src="assets/bilal.jpg" alt="Bilal Bastan">
+        <picture>
+          <source srcset="assets/bilal.webp" type="image/webp">
+          <img src="assets/bilal.jpg" alt="Bilal Bastan" loading="eager" fetchpriority="high">
+        </picture>
         <span class="about-photo-tag mono">BILAL BASTAN</span>
       </div>
 
